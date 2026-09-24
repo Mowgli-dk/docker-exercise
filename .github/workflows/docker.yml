@@ -16,3 +16,5 @@ jobs:
       - run: sleep 2
       - run: curl -f localhost:9090
       - run: docker rm -f site
+      - run: bash image.sh
+      - run: bash image.sh
