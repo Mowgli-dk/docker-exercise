@@ -6,6 +6,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: docker run hello-world
+      - run: docker build -t minside
       - run: bash container.sh
-      - run: bash container.sh
-      - run: bash index.html
