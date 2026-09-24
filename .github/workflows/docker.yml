@@ -1,9 +1,13 @@
-name: docker
-on: push
+name: Docker build
+
+on:
+  push:
+    branches: [main]
+
 jobs:
-  docker:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: docker run hello-world
-      - run: bash container.sh
+      - name: Start nginx container
+        run: bash container.sh
