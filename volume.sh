@@ -9,4 +9,6 @@ docker run --rm -v minvolume:/data alpine cat /data/besked.txt
 
 ! docker run --rm alpine cat /data/besked.txt
 
-docker volume ls . docker volume rm data
+docker volume ls
+
+docker volume rm data
