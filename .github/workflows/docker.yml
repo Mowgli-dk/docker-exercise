@@ -9,7 +9,8 @@ jobs:
       - run: bash container.sh
       - run: docker build -t minside .
       - run: docker run -d --name site -p 8080:8000 minside
-      - run: docker run -d --name site -p 9090:8000 minside
       - run: sleep 3
       - run: curl -f localhost:8080
+      - run: docker rm -f site
+      - run: docker run -d --name site -p 9090:8000 minside
       - run: docker rm -f site
