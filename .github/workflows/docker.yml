@@ -16,3 +16,4 @@ jobs:
       - run: docker rm -f site
       - run: bash image.sh
       - run: bash image.sh
+      - run: bash volume.sh
