@@ -8,3 +8,4 @@ docker logs my-nginx
 
 docker run -d --name my-nginx-2 nginx
 docker ps
+docker rm -f my-nginx my-nginx-2
